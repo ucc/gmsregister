@@ -9,6 +9,7 @@ Features:
 Flaws:
  - Don't care about validation much
  - Don't care about user friendliness much
+ - Don't even care about security much, because it's not actually MemberDB
  - Would probably break, if we had like, more than 200 people use it at the same time, cos that's going to happen
  - Makes wheel members go all glazy eyed and talk about frameworks
  
