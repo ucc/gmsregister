@@ -1,0 +1,48 @@
+<html>
+	<head><title>UCC Membership Registration</title></head>
+	<body>
+		<h1>UCC Membership Registration</h1>
+		<p> Fill out the following information, then pay us money.</p> 
+
+		<form action="index.cgi" method="post">
+			<table>
+				<tr><td>Realname (First Last)</td><td><input type="text" name="real_name"></td></tr>
+				<tr><td>Username (lowercase)</td><td><input type="text" name="username"></td></tr>
+				<tr><td>Email Address</td><td><input type="text" name="email_address"></td></tr>
+				<tr><td>Phone Number</td><td><input type="text" name="phone_number"></td></tr>
+				<tr><td>Student/Staff/DL Number</td><td><input type="text" name="student_no"></td></tr>
+				<tr><td>DOB (YYYY-MM-DD)</td><td><input type="text" name="date_of_birth"></td></tr>
+			</table>
+			<p>Gender:</p>
+			<table>
+				<tr><td>Female:</td><td><input type="radio" name="gender" value="female"></td> </tr>
+				<tr><td>Male:</td><td><input type="radio" name="gender" value="male"></td> </tr>
+				<tr><td>Other:</td><td><input type="radio" name="gender" value="other"></td> </tr>
+			</table>
+			<p>Address:</p>
+			<textarea rows="5" cols="50" name="address"></textarea>
+			<p></p>
+
+			<p>Membership Type</p>
+			<table>
+				<tr><td>Rejoining:</td><td><input type="radio" name="membership_type" value="Rejoining"></td> </tr>
+				<tr><td>New Member:</td><td><input type="radio" name="membership_type" value="New Member"></td> </tr>
+				<tr><td>Life Member:</td><td><input type="radio" name="membership_type" value="Life Member"></td> </tr>
+			</table>
+
+			<p>Membership Type II</p>
+			<table>
+				<tr><td>UWA Student, Guild</td><td><input type="radio" name="guild_member" value="guild"></td> </tr>
+				<tr><td>UWA Student, NON-Guild</td><td><input type="radio" name="guild_member" value="student_noguild"></td></tr>
+				<tr><td>UWA Staff, Guild</td><td><input type="radio" name="guild_member" value="staff_guild"</td></tr>
+				<tr><td>CASSA/ComSSA Member</td><td><input type="radio" name="guild_member" value="friend club"></td></tr>
+				<tr><td>None of the above</td><td><input type="radio" name="guild_member" value="none" checked="yes"></td></tr>
+			</table>
+
+			<p> Anti-spam: What animal is on the banner in the UCC clubroom? <input type="text" name="secret"></p>
+			<p> <b>I agree to abide by the UCC's constitution, rulings of the UCC Committee and network usage guidelines</b> <input type="checkbox" name="agree" value="yes"></p>
+			<input type="submit" value="Submit"> <input type="reset">	
+
+		</form>
+	</body>
+</html>
